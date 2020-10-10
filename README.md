@@ -4,6 +4,15 @@
 (現状では[Da vinci nano w](https://www.xyzprinting.com/ja-JP/product/da-vinci-nano-w)で出力できることを確認しています。)
 
 # How to use
+先に以下のpythonパッケージをインストールしてください。
+
+```shell:install
+pip3 install numpy
+pip3 install numpy-stl
+pip3 install mpl_toolkits
+pip3 install matplotlib
+```
+
 本githubを使いたいフォルダへcloneしてからご使用ください。
 現時点ではbool型の値が入ったnumpy配列からプレートのメッシュを作成することができます。
 

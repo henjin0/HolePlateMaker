@@ -2,7 +2,7 @@ import numpy as np
 from stl import mesh
 from mpl_toolkits import mplot3d
 from matplotlib import pyplot
-from NumpyArrayToPlate import NumpyBoolArrayToPlate
+import NumpyArrayToPlate
 
 plateData = np.array([[True,False,True],
     [True,False,True],
@@ -10,7 +10,7 @@ plateData = np.array([[True,False,True],
     [False,False,True],
     [False,False,True],])
 
-curMesh = NumpyBoolArrayToPlate(plateData)
+curMesh = NumpyArrayToPlate.NumpyBoolArrayToPlate(plateData)
 
 figure = pyplot.figure()
 axes = mplot3d.Axes3D(figure)

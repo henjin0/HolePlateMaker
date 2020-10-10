@@ -1,7 +1,7 @@
 import numpy as np
 from stl import mesh
-from setBU32 import setBU32
-from addBlock import addBlock
+import setBU32 as sbu32
+import addBlock as ab
 
 
 def NumpyBoolArrayToPlate(plateData):
@@ -10,7 +10,7 @@ def NumpyBoolArrayToPlate(plateData):
     for i in np.arange(0,size[0]):
         for j in np.arange(0,size[1]):
             if(plateData[i][j]):
-                newMesh = setBU32(i,j,0)
-                curMesh = addBlock(curMesh, newMesh)
+                newMesh = sbu32.setBU32(i,j,0)
+                curMesh = ab.addBlock(curMesh, newMesh)
     
     return curMesh

@@ -1,7 +1,7 @@
 import numpy as np
 from stl import mesh
-import setBU32 as sbu32
-import addBlock as ab
+from HolePlateMaker import setBU32 as sbu32
+from HolePlateMaker import addBlock as ab
 
 
 def NumpyBoolArrayToPlate(plateData):

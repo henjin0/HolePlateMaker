@@ -2,12 +2,14 @@ import numpy as np
 from stl import mesh
 from mpl_toolkits import mplot3d
 from matplotlib import pyplot
-import mesh_scale as ms
-import mesh_update as mu
-import cube_model as c_m
-import mesh_location_zero as m_l_z
-import setBU32 as sbu32
-import addBlock as ab
+from HolePlateMaker import mesh_scale as ms
+from HolePlateMaker import mesh_scale as ms
+from HolePlateMaker import mesh_scale as ms
+from HolePlateMaker import mesh_update as mu
+from HolePlateMaker import cube_model as c_m
+from HolePlateMaker import mesh_location_zero as m_l_z
+from HolePlateMaker import setBU32 as sbu32
+from HolePlateMaker import addBlock as ab
 
 
 curMesh = sbu32.setBU32(0,0,0)

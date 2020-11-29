@@ -9,7 +9,6 @@
 ```shell:install
 pip3 install numpy
 pip3 install numpy-stl
-pip3 install mpl_toolkits
 pip3 install matplotlib
 ```
 

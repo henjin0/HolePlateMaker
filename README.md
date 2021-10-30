@@ -53,7 +53,7 @@ curMesh.save('example2.stl')
 出力される結果は、下記の写真のようにnumpy配列の[0][0]を原点0,0に揃え、行方向、列方向に沿ってプレートの穴部分を追加していきます。また、type='4.8mm'を指定すると円形の穴と十字形(Axle)の穴をそれぞれ1,2という数値で指定することが可能です。
 
 
-<img width="600" alt="example1.py 出力結果" src="https://github.com/henjin0/HolePlateMaker/blob/main/NumpyArrayToMesh.png">
+<img width="600" alt="example1.py 出力結果" src="NumpyArrayToMesh.png">
 
 
 

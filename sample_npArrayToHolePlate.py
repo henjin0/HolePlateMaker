@@ -4,18 +4,18 @@ import matplotlib
 matplotlib.use('Qt5Agg')
 from mpl_toolkits import mplot3d
 from matplotlib import pyplot
-from HolePlateMaker import NumpyArrayToPlate
+from HolePlateMaker import NumpyArrayToHolePlate
 
 # 
 pyplot.rcParams["font.family"] = "Arial" 
 
-plateData = np.array([[True,False,True],
-    [True,False,True],
-    [True,True,True,],
-    [False,False,True],
-    [False,False,True],])
+plateData = np.array([[1,0,2],
+    [2,0,1],
+    [1,1,1,],
+    [0,0,2],
+    [0,0,1],])
 
-curMesh = NumpyArrayToPlate.NumpyBoolArrayToPlate(plateData)
+curMesh = NumpyArrayToHolePlate.NumpyArrayToPlate(plateData,'4.8mm')
 curMesh.save('plate.stl')
 
 figure = pyplot.figure()

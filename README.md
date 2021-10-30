@@ -19,6 +19,10 @@ pip3 install -r requirements.txt
 
 本githubを使いたいフォルダへcloneしてからご使用ください。
 
+出力される結果は、下記の写真のようにnumpy配列の[0][0]を原点0,0に揃え、行方向、列方向に沿ってプレートの穴部分を追加していきます。また、type='4.8mm'を指定すると円形の穴と十字形(Axle)の穴をそれぞれ1,2という数値で指定することが可能です。
+
+<img width="600" alt="example1.py 出力結果" src="NumpyArrayToMesh.png">
+
 # サンプルコード(穴経3 mm)
 
 ```python:example1.py(穴径3 mm)
@@ -52,12 +56,6 @@ plateData = np.array([[2,0,1],
 curMesh = NumpyArrayToHolePlate.NumpyArrayToPlate(plateData,'4.8mm')
 curMesh.save('example2.stl')
 ```
-
-
-出力される結果は、下記の写真のようにnumpy配列の[0][0]を原点0,0に揃え、行方向、列方向に沿ってプレートの穴部分を追加していきます。また、type='4.8mm'を指定すると円形の穴と十字形(Axle)の穴をそれぞれ1,2という数値で指定することが可能です。
-
-<img width="600" alt="example1.py 出力結果" src="NumpyArrayToMesh.png">
-
 
 # 穴径4.8 mm指定がキツくなってしまう場合について 
 

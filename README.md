@@ -19,6 +19,8 @@ pip3 install -r requirements.txt
 
 本githubを使いたいフォルダへcloneしてからご使用ください。
 
+# サンプルコード(穴経3 mm)
+
 ```python:example1.py(穴径3 mm)
 import numpy as np
 from stl import mesh
@@ -33,6 +35,8 @@ plateData = np.array([[1,0,1],
 curMesh = NumpyArrayToHolePlate.NumpyArrayToPlate(plateData,'3mm')
 curMesh.save('example1.stl')
 ```
+
+# サンプルコード(穴経4.8 mm)
 
 ```python:example2.py(穴径4.8 mm)
 import numpy as np

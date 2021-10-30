@@ -5,6 +5,7 @@
 
 # HolePlateMaker
 穴を等間隔に開けた工作用プレートの3Dデータ(STLファイル)を自作できるライブラリです。
+現在はネジ止め等に有効な3 mm穴とデンマークの某有名ブロックと互換する4.8 mm穴が作成できます。
 作成したSTLはお好みの３Dプリンタで出力してください。
 (現状では[Da vinci nano w](https://www.xyzprinting.com/ja-JP/product/da-vinci-nano-w)で出力できることを確認しています。)
 
@@ -17,7 +18,6 @@ pip3 install -r requirements.txt
 ```
 
 本githubを使いたいフォルダへcloneしてからご使用ください。
-現状だと5 mm間隔でつながる穴径約3 mmの工作系プレートと7.97 mm間隔でつながる穴径約4.8 mmぐらいのLego Technicに互換しそうな穴に有効です。(穴経4.8 mm版は造形未チェックです)
 
 ```python:example1.py(穴径3 mm)
 import numpy as np

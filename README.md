@@ -16,8 +16,7 @@ pullしたパッケージ中でpython -m venv \[仮想環境名\]を実行し、
 ```shell:install
 pip3 install -r requirements.txt
 ```
-
-本githubを使いたいフォルダへcloneしてからご使用ください。
+example1.pyなどのサンプルコードを参考に、clone後のローカルリポジトリ内にあるHolePlateMaker内にあるNumpyArrayToHolePlateをimportしてご使用ください。
 
 出力される結果は、下記の写真のようにnumpy配列の[0][0]を原点0,0に揃え、行方向、列方向に沿ってプレートの穴部分を追加していきます。また、type='4.8mm'を指定すると円形の穴と十字形(Axle)の穴をそれぞれ1,2という数値で指定することが可能です。
 

@@ -5,15 +5,6 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  build:
-    docker:
-      - image: cimg/python:3.9.12
-    steps:
-      - checkout
-      - run:
-        name: pip
-        command: pip3 install -r requirements.txt
-
   say-hello:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
@@ -33,4 +24,3 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-      - build

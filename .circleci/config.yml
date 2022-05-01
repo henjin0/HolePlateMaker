@@ -11,13 +11,10 @@ jobs:
       name: default
     steps:
       - checkout
-      - run: pyenv --version
-      - run: pyenv install 3.9.12
       - run: python -m venv testenv
-      - run: source testenv/bin/activate 
+      - run: . testenv/bin/activate
       - run: python -V
       - run: pip install -r requirements.txt
-      - run: deactivate
       - save_cache:
           key: my-cache
           paths:
@@ -30,7 +27,6 @@ jobs:
           key: my-cache
       - run: ls
       - run: pwd
-      - run: pyenv install 3.9.12
       - run: source testenv/bin/activate
       - run: python example1.py 
       - run: echo "done."

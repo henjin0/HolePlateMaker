@@ -30,6 +30,7 @@ jobs:
       - run: ls
       - run: pwd
       - run: source testenv/bin/activate
+      - run: pip install -r requirements.txt
       - run: python example1.py 
       - run: echo "done."
 workflows:

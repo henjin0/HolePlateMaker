@@ -27,8 +27,9 @@ jobs:
           key: my-cache
       - run: ls
       - run: pwd
-      - run: source testenv/bin/activate
-      - run: python example1.py 
+      - run: . testenv/bin/activate
+      - run: python example1.py
+      - run: python example2.py
       - run: echo "done."
 workflows:
   stl-maker:

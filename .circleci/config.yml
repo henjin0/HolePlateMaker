@@ -15,26 +15,29 @@ jobs:
       - run: . testenv/bin/activate
       - run: python -V
       - run: pip install -r requirements.txt
-      - save_cache:
-          key: my-cache
-          paths:
-            - ~/work
-  test:
-    executor:
-      name: default
-    steps:
-      - restore_cache:
-          key: my-cache
-      - run: ls
-      - run: pwd
-      - run: . testenv/bin/activate
       - run: python example1.py
       - run: python example2.py
       - run: echo "done."
+  #     - save_cache:
+  #         key: my-cache
+  #         paths:
+  #           - ~/work
+  # test:
+  #   executor:
+  #     name: default
+  #   steps:
+  #     - restore_cache:
+  #         key: my-cache
+  #     - run: ls
+  #     - run: pwd
+  #     - run: . testenv/bin/activate
+  #     - run: python example1.py
+  #     - run: python example2.py
+  #     - run: echo "done."
 workflows:
   stl-maker:
     jobs:
       - build
-      - test:
-          requires:
-            - build
+      # - test:
+      #     requires:
+      #       - build
